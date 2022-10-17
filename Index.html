@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Coll Screen Desing</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+
+		<div id="infoInputDiv" class="inputInfo">
+			<span>Name :</span> <br>
+			<input id="nameInput" class="nameInput" type="text" placeholder="Not more than 18 characters">
+
+			<span>Coll Time :</span> <br>
+			<input id="hour" type="number" placeholder="Hour">
+			<input id="minute" type="number" placeholder="Minute">
+			<input id="second" type="number" placeholder="Second">
+
+			<span>Background Images : </span> <br>
+			<i id="bgUpload" class="fa-solid fa-cloud-arrow-up"></i>
+			<input id="inputBGimages" type="file">
+			<span id="uploadWorning"></span> <br>
+
+			<button id="submitInfo">Submit</button>
+		</div>
+
+		<div id="phoneScreenDiv" class="collScreenDiv">
+			<img id="bgImages" src="images/bg.jpg">
+			<div class="infoScreen">
+				<h1 id="name" class="name">🎀  𝑀𝓎 𝐿🌞𝓋𝑒  🎀</h1>
+				<p id="time" class="timeCount">00:00</p>
+
+				<ul id="optionBtn" class="collFunctionicon">
+					<li>
+						<i class="fa-solid fa-microphone-slash"></i>
+						<span>mute</span>
+					</li>
+					<li>
+						<i class="fa-solid fa-keyboard"></i>
+						<span>keypad</span>
+					</li>
+					<li id="voluimSet">
+						<i class="fa-solid fa-volume-high"></i>
+						<span>speaker</span>
+					</li>
+					<li>
+						<i class="fa-solid fa-plus"></i>
+						<span>add</span>
+					</li>
+					<li>
+						<i class="fa-solid fa-video"></i>
+						<span>FceTime</span>
+					</li>
+					<li>
+						<i class="fa-solid fa-user-group"></i>
+						<span>contacts</span>
+					</li>
+				</ul>
+
+				<div id="endColl" class="collButton"><i class="fa-solid fa-phone"></i></div>
+			</div>
+		</div>
+
+		<audio id="myAudio">
+		  <source src="audio/hello.mp3" type="audio/mp3">
+		</audio>
+
+	<script src="js/castom.js"></script>
+	</body>
+</html>
